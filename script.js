@@ -1,4 +1,5 @@
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const root = document.documentElement;
 
 document.body.classList.add("motion-ready");
 
@@ -8,6 +9,78 @@ window.addEventListener("scroll", () => {
   window.clearTimeout(scrollTimer);
   scrollTimer = window.setTimeout(() => document.body.classList.remove("is-scrolling"), 220);
 }, { passive: true });
+
+if (!reducedMotion) {
+  const background = {
+    frame: 0,
+    x: 0,
+    y: 0,
+    scroll: 0,
+    targetX: 0,
+    targetY: 0,
+    targetScroll: 0,
+  };
+
+  function paintBackground() {
+    background.frame = 0;
+    background.x += (background.targetX - background.x) * 0.09;
+    background.y += (background.targetY - background.y) * 0.09;
+    background.scroll += (background.targetScroll - background.scroll) * 0.08;
+
+    root.style.setProperty("--bg-glow-x", `${background.x.toFixed(2)}px`);
+    root.style.setProperty("--bg-glow-y", `${background.y.toFixed(2)}px`);
+    root.style.setProperty("--bg-scroll-y", `${background.scroll.toFixed(2)}px`);
+    root.style.setProperty("--bg-texture-x", `${(-background.x * 0.32).toFixed(2)}px`);
+    root.style.setProperty("--bg-texture-y", `${(-background.y * 0.2).toFixed(2)}px`);
+
+    const remaining =
+      Math.abs(background.targetX - background.x) +
+      Math.abs(background.targetY - background.y) +
+      Math.abs(background.targetScroll - background.scroll);
+
+    if (remaining > 0.2) background.frame = requestAnimationFrame(paintBackground);
+  }
+
+  function requestBackgroundPaint() {
+    if (!background.frame) background.frame = requestAnimationFrame(paintBackground);
+  }
+
+  function moveBackground(clientX, clientY) {
+    const x = clientX / window.innerWidth - 0.5;
+    const y = clientY / window.innerHeight - 0.5;
+    background.targetX = x * 44;
+    background.targetY = y * 30;
+    document.body.classList.add("background-active");
+    requestBackgroundPaint();
+  }
+
+  window.addEventListener("pointermove", (event) => {
+    moveBackground(event.clientX, event.clientY);
+  }, { passive: true });
+
+  window.addEventListener("touchmove", (event) => {
+    const touch = event.touches[0];
+    if (touch) moveBackground(touch.clientX, touch.clientY);
+  }, { passive: true });
+
+  function resetBackgroundPointer() {
+    background.targetX = 0;
+    background.targetY = 0;
+    document.body.classList.remove("background-active");
+    requestBackgroundPaint();
+  }
+
+  window.addEventListener("pointerleave", resetBackgroundPointer, { passive: true });
+  window.addEventListener("touchend", resetBackgroundPointer, { passive: true });
+
+  window.addEventListener("scroll", () => {
+    background.targetScroll = -Math.min(window.scrollY * 0.04, 82);
+    requestBackgroundPaint();
+  }, { passive: true });
+
+  background.targetScroll = -Math.min(window.scrollY * 0.04, 82);
+  requestBackgroundPaint();
+}
 
 const easeOutCubic = (value) => 1 - Math.pow(1 - value, 3);
 

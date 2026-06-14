@@ -8,9 +8,11 @@
       name="description"
       content="A monochrome portfolio website for brand identity and package design."
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=4" />
   </head>
   <body>
+    <div class="site-backdrop" aria-hidden="true"></div>
+
     <header class="site-header">
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#services">Services</a>
@@ -21,15 +23,21 @@
     </header>
 
     <main>
-      <section class="hero" id="home">
+      <section class="hero" id="home" data-display="BRANDING">
         <div class="hero-bg"></div>
         <div class="hero-inner">
+          <p class="hero-issue">Portfolio 025</p>
           <p class="eyebrow"><span></span>Crafting Unique Brand Identities</p>
           <h1>Branding that you need Indeed</h1>
           <p class="hero-copy">
             Elevate your brand with custom identity and package design. Showcase your story
             through bold visuals and strategic design solutions.
           </p>
+          <div class="hero-editorial" aria-label="Portfolio highlights">
+            <span>Tokyo based</span>
+            <span>Brand identity</span>
+            <span>Packaging design</span>
+          </div>
           <div class="hero-actions">
             <a class="glass-button" href="#contact">Get Started Now</a>
             <a class="glass-button" href="#projects">See Projects</a>
@@ -59,7 +67,7 @@
         </div>
       </section>
 
-      <section class="project-masonry" id="projects" aria-label="Selected projects">
+      <section class="project-masonry" id="projects" aria-label="Selected projects" data-display="WORK">
         <div class="masonry-column">
           <a class="project-card small" href="#contact">
             <img src="https://framerusercontent.com/images/GkhJfmw17Q5eehve51WR25Ijjnk.png?scale-down-to=512&width=880&height=661" alt="Cassette product design" />
@@ -109,7 +117,7 @@
         <a class="glass-button compact" href="#contact">Book a Free Call</a>
       </div>
 
-      <section class="about split-section">
+      <section class="about split-section" data-section="PROFILE">
         <div class="copy-block">
           <h2>Meet Meily</h2>
           <p>
@@ -180,7 +188,7 @@
         </div>
       </section>
 
-      <section class="process split-section">
+      <section class="process split-section" data-display="PROCESS">
         <figure class="image-block tall">
           <img src="https://framerusercontent.com/images/djbcRHCD89IflJ1okJAa1J65cuM.png?width=1200&height=600" alt="Design process desk" />
         </figure>
@@ -225,7 +233,7 @@
         </div>
       </section>
 
-      <section class="services" id="services">
+      <section class="services" id="services" data-display="SERVICES">
         <div class="split-section services-intro">
           <div class="copy-block">
             <p class="eyebrow"><span></span>Design services</p>
@@ -344,7 +352,7 @@
         </div>
       </section>
 
-      <section class="stats">
+      <section class="stats" data-display="IMPACT">
         <div><h3>180+</h3><p>design projects completed.</p></div>
         <div><h3>96%</h3><p>Client satisfaction rate.</p></div>
         <div><h3>15+</h3><p>Years of experience</p></div>
@@ -378,7 +386,7 @@
         </div>
       </section>
 
-      <section class="final-cta" id="contact">
+      <section class="final-cta" id="contact" data-display="CREATE">
         <div class="hero-bg"></div>
         <p class="eyebrow muted"><span></span>Available For Work</p>
         <h3>Curious about what we can create together? Let's bring something extraordinary to life!</h3>
@@ -399,6 +407,6 @@
       </section>
     </main>
 
-    <script src="./script.js?v=4"></script>
+    <script src="./script.js?v=5"></script>
   </body>
 </html>
