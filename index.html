@@ -1,17 +1,26 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio Website</title>
+    <title>Humpri Azi Portfolio</title>
     <meta
       name="description"
-      content="A monochrome portfolio website for brand identity and package design."
+      content="AI-powered digital marketing, UI/UX design, website building, and email strategy portfolio for Humpri Azi."
     />
-    <link rel="stylesheet" href="./styles.css?v=4" />
+    <link rel="stylesheet" href="./styles.css?v=43" />
   </head>
   <body>
-    <div class="site-backdrop" aria-hidden="true"></div>
+    <div class="site-backdrop" aria-hidden="true">
+      <div class="abstract-fallback">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <canvas class="galaxy-background" aria-hidden="true"></canvas>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
     <header class="site-header">
       <nav class="nav-links" aria-label="Primary navigation">
@@ -24,23 +33,23 @@
 
     <main>
       <section class="hero" id="home" data-display="BRANDING">
-        <div class="hero-bg"></div>
+        <div class="hero-bg">
+          <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+            <source src="./assets/black-android-head.mp4" type="video/mp4" />
+          </video>
+          <span class="video-logo-cover" aria-hidden="true"></span>
+        </div>
         <div class="hero-inner">
-          <p class="hero-issue">Portfolio 025</p>
-          <p class="eyebrow"><span></span>Crafting Unique Brand Identities</p>
-          <h1>Branding that you need Indeed</h1>
+          <p class="eyebrow"><span></span>AI-Powered Digital Expert</p>
+          <h1>Marketing, Design, and Results - Built for You</h1>
           <p class="hero-copy">
-            Elevate your brand with custom identity and package design. Showcase your story
-            through bold visuals and strategic design solutions.
+            From high-converting websites to email campaigns that get opened, I help brands grow
+            through smarter digital strategy, design, and execution.
           </p>
           <div class="hero-editorial" aria-label="Portfolio highlights">
-            <span>Tokyo based</span>
-            <span>Brand identity</span>
-            <span>Packaging design</span>
-          </div>
-          <div class="hero-actions">
-            <a class="glass-button" href="#contact">Get Started Now</a>
-            <a class="glass-button" href="#projects">See Projects</a>
+            <span>Digital Marketing</span>
+            <span>UI/UX Design</span>
+            <span>Website Building</span>
           </div>
         </div>
         <div class="scroll-cue" aria-hidden="true">
@@ -54,178 +63,206 @@
 
       <section class="logo-strip" aria-label="Featured clients">
         <div class="logo-track">
-          <img src="https://framerusercontent.com/images/otv1rEDn2X7h8TFtKPCksQmAEKQ.svg?width=75&height=17" alt="" />
-          <img src="https://framerusercontent.com/images/rrRoFs4icQtustYbIGm5r5DXREI.svg?width=50&height=17" alt="" />
-          <img src="https://framerusercontent.com/images/hhTRf8RciR9bakkAgIckAkEiQM.svg?width=57&height=18" alt="" />
-          <img src="https://framerusercontent.com/images/1ph1389RD4RtUDEfqVhWbujyF7s.svg?width=56&height=20" alt="" />
-          <img src="https://framerusercontent.com/images/Yn3MOOL9rTXhK9U8MLvSnEoNP8.svg?width=45&height=14" alt="" />
-          <img src="https://framerusercontent.com/images/otv1rEDn2X7h8TFtKPCksQmAEKQ.svg?width=75&height=17" alt="" />
-          <img src="https://framerusercontent.com/images/rrRoFs4icQtustYbIGm5r5DXREI.svg?width=50&height=17" alt="" />
-          <img src="https://framerusercontent.com/images/hhTRf8RciR9bakkAgIckAkEiQM.svg?width=57&height=18" alt="" />
-          <img src="https://framerusercontent.com/images/1ph1389RD4RtUDEfqVhWbujyF7s.svg?width=56&height=20" alt="" />
-          <img src="https://framerusercontent.com/images/Yn3MOOL9rTXhK9U8MLvSnEoNP8.svg?width=45&height=14" alt="" />
+          <img loading="lazy" decoding="async" src="https://framerusercontent.com/images/otv1rEDn2X7h8TFtKPCksQmAEKQ.svg?width=75&height=17" alt="" />
+          <img loading="lazy" decoding="async" src="https://framerusercontent.com/images/rrRoFs4icQtustYbIGm5r5DXREI.svg?width=50&height=17" alt="" />
+          <img loading="lazy" decoding="async" src="https://framerusercontent.com/images/hhTRf8RciR9bakkAgIckAkEiQM.svg?width=57&height=18" alt="" />
+          <img loading="lazy" decoding="async" src="https://framerusercontent.com/images/1ph1389RD4RtUDEfqVhWbujyF7s.svg?width=56&height=20" alt="" />
+          <img loading="lazy" decoding="async" src="https://framerusercontent.com/images/Yn3MOOL9rTXhK9U8MLvSnEoNP8.svg?width=45&height=14" alt="" />
+          <img loading="lazy" decoding="async" src="https://framerusercontent.com/images/otv1rEDn2X7h8TFtKPCksQmAEKQ.svg?width=75&height=17" alt="" />
+          <img loading="lazy" decoding="async" src="https://framerusercontent.com/images/rrRoFs4icQtustYbIGm5r5DXREI.svg?width=50&height=17" alt="" />
+          <img loading="lazy" decoding="async" src="https://framerusercontent.com/images/hhTRf8RciR9bakkAgIckAkEiQM.svg?width=57&height=18" alt="" />
+          <img loading="lazy" decoding="async" src="https://framerusercontent.com/images/1ph1389RD4RtUDEfqVhWbujyF7s.svg?width=56&height=20" alt="" />
+          <img loading="lazy" decoding="async" src="https://framerusercontent.com/images/Yn3MOOL9rTXhK9U8MLvSnEoNP8.svg?width=45&height=14" alt="" />
         </div>
       </section>
 
       <section class="project-masonry" id="projects" aria-label="Selected projects" data-display="WORK">
         <div class="masonry-column">
-          <a class="project-card small" href="#contact">
-            <img src="https://framerusercontent.com/images/GkhJfmw17Q5eehve51WR25Ijjnk.png?scale-down-to=512&width=880&height=661" alt="Cassette product design" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="project-card small" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Maklin email layout project">
+            <img loading="lazy" decoding="async" src="./assets/projects/maklin-email-layout.jpg" alt="Maklin fashion email layout project" />
           </a>
-          <a class="project-card small" href="#contact">
-            <img src="https://framerusercontent.com/images/En1SV0rP485Zf5WOrpnHl3Nz658.png?scale-down-to=1024&width=960&height=1200" alt="Minimal product packaging" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="project-card small" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Greenfly email design project">
+            <img loading="lazy" decoding="async" src="./assets/projects/greenfly-email-design.jpg" alt="Greenfly short-form content platform email design" />
           </a>
-          <a class="project-card small" href="#contact">
-            <img src="https://framerusercontent.com/images/bed888CTflXNK3KFX1R7VhRMtE.png?scale-down-to=1024&width=933&height=1200" alt="Cosmetic bottle packaging" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="project-card small" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Maklin social wardrobe project">
+            <img loading="lazy" decoding="async" src="./assets/projects/maklin-social-wardrobe.jpg" alt="Maklin wardrobe social media project" />
           </a>
-        </div>
-        <div class="masonry-column center">
-          <a class="project-card large" href="#contact">
-            <img src="https://framerusercontent.com/images/roWFLkzHAotwSx5UxGPxpxMeA.jpg?width=904&height=1200" alt="Fashion profile visual" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="project-card large" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Lumiere packaging project">
+            <img loading="lazy" decoding="async" src="./assets/projects/lumiere-botanique-packaging.jpg" alt="Lumiere Botanique skincare packaging project" />
           </a>
-          <a class="project-card large" href="#contact">
-            <img src="https://framerusercontent.com/images/QqqmFNIdzb0HbOiMSHvqZXkwT7w.png?width=1200&height=1200" alt="Lemon product photography" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="project-card large" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Maklin editorial poster project">
+            <img loading="lazy" decoding="async" src="./assets/projects/maklin-editorial-poster.jpg" alt="Maklin elevated essentials editorial poster" />
           </a>
-          <a class="project-card large" href="#contact">
-            <img src="https://framerusercontent.com/images/RYRvZnstUexQMOl8zRyrvDfDT0.png?scale-down-to=1024&width=800&height=1200" alt="Bottle identity design" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="project-card large" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open marketplace strategy project">
+            <img loading="lazy" decoding="async" src="./assets/projects/marketplace-strategy-cards.jpg" alt="Marketplace brand strategy card design" />
           </a>
-        </div>
-        <div class="masonry-column">
-          <a class="project-card small" href="#contact">
-            <img src="https://framerusercontent.com/images/jlIAaI4caPj3oVLaxetMd2RvY.png?scale-down-to=1024&width=800&height=1200" alt="Tube packaging design" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="project-card small" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Interior Moderna chair project">
+            <img loading="lazy" decoding="async" src="./assets/projects/interior-moderna-chair.jpg" alt="Interior Moderna Nevola chair product page" />
           </a>
-          <a class="project-card small" href="#contact">
-            <img src="https://framerusercontent.com/images/MM7F7DNjn9gGQjHqbiowegENsRY.png?scale-down-to=1024&width=960&height=1200" alt="Bathroom product design" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="project-card small" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open platform strategy project">
+            <img loading="lazy" decoding="async" src="./assets/projects/platform-specific-thinking.jpg" alt="Platform-specific marketing strategy visual" />
           </a>
-          <a class="project-card small" href="#contact">
-            <img src="https://framerusercontent.com/images/W7bXB4tsou7l5mHYU8sze3sBeg.png?scale-down-to=1024&width=933&height=1200" alt="Bottle shadow composition" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="project-card small" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Lumiere product collage project">
+            <img loading="lazy" decoding="async" src="./assets/projects/lumiere-product-collage.jpg" alt="Lumiere skincare product content collage" />
+          </a>
+          <a class="project-card small" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Spectra mirror product page project">
+            <img loading="lazy" decoding="async" src="./assets/projects/spectra-mirror-product-page.jpg" alt="Spectra mirror e-commerce product page" />
+          </a>
+          <a class="project-card small" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Maklin knit social project">
+            <img loading="lazy" decoding="async" src="./assets/projects/maklin-knit-social.jpg" alt="Maklin new season essentials social post" />
+          </a>
+          <a class="project-card small" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Maklin real life social project">
+            <img loading="lazy" decoding="async" src="./assets/projects/maklin-real-life-social.jpg" alt="Maklin made for real life social post" />
+          </a>
+          <a class="project-card large" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Interior Moderna social set project">
+            <img loading="lazy" decoding="async" src="./assets/projects/interior-moderna-social-set.jpg" alt="Interior Moderna social media design set" />
+          </a>
+          <a class="project-card large" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open marketing clarity carousel project">
+            <img loading="lazy" decoding="async" src="./assets/projects/marketing-clarity-carousel.jpg" alt="AI marketing clarity carousel slide" />
+          </a>
+          <a class="project-card large" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Maklin styling carousel project">
+            <img loading="lazy" decoding="async" src="./assets/projects/maklin-styling-carousel.jpg" alt="Maklin one knit four ways carousel" />
+          </a>
+          <a class="project-card small" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Flowstack landing page project">
+            <img loading="lazy" decoding="async" src="./assets/projects/flowstack-landing-page.jpg" alt="Flowstack SaaS landing page project" />
+          </a>
+          <a class="project-card small" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Maklin care tips project">
+            <img loading="lazy" decoding="async" src="./assets/projects/maklin-care-tips.jpg" alt="Maklin clothing care tips social post" />
+          </a>
+          <a class="project-card small" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Flowstack app page project">
+            <img loading="lazy" decoding="async" src="./assets/projects/flowstack-app-page.jpg" alt="Flowstack project management website page" />
+          </a>
+          <a class="project-card large" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Osbauer campaign project">
+            <img loading="lazy" decoding="async" src="./assets/projects/osbauer-workwear-campaign.jpg" alt="Osbauer workwear campaign creative" />
+          </a>
+          <a class="project-card large" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Flowstack email sequence project">
+            <img loading="lazy" decoding="async" src="./assets/projects/flowstack-email-sequence.jpg" alt="Flowstack welcome email sequence design" />
+          </a>
+          <a class="project-card large" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open e-commerce marketing problem project">
+            <img loading="lazy" decoding="async" src="./assets/projects/ecommerce-marketing-problem.jpg" alt="E-commerce marketing problem carousel slide" />
+          </a>
+          <a class="project-card small" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open AI marketing advantage project">
+            <img loading="lazy" decoding="async" src="./assets/projects/ai-marketing-advantage.jpg" alt="AI marketing advantage visual framework" />
           </a>
         </div>
       </section>
 
       <div class="project-actions">
-        <a href="#projects">All Projects</a>
-        <a class="glass-button compact" href="#contact">Book a Free Call</a>
+        <a href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer">All Projects</a>
       </div>
 
       <section class="about split-section" data-section="PROFILE">
         <div class="copy-block">
-          <h2>Meet Meily</h2>
+          <h2 class="typewriter-text" data-typewriter="Meet Azi">Meet Azi</h2>
           <p>
-            I'm Meily, a passionate Brand Identity & Package Designer based in tokyo. I
-            specialize in crafting bold visual identities and packaging that captivate and
-            inspire, blending creativity with strategy to elevate brands.
+            Hi, I'm Humpri Azi, an AI Digital Marketing Manager, UI/UX Designer, Website
+            Builder, and Email Marketing Specialist based in Cebu, Philippines. I specialize in
+            driving growth through smart digital strategy, clean design, and AI-powered
+            automation, blending creativity with execution to help brands grow through smarter
+            digital communication.
           </p>
           <div class="divider"></div>
           <div class="tag-cloud">
-            <span>Product Design</span>
-            <span>Brand Identity Design</span>
-            <span>UX Design</span>
-            <span>Branding</span>
-            <span>Packaging Design</span>
-            <span>Figma</span>
-            <span>Photoshop</span>
+            <span>Digital Marketing</span>
+            <span>UI/UX Design</span>
+            <span>Email Marketing</span>
+            <span>Website Building</span>
+            <span>Automation</span>
+            <span>Saas Business Dev</span>
           </div>
           <div class="experience-grid">
-            <p>Freelance</p>
-            <p>GreenLeaf Co</p>
-            <p>Currently</p>
-            <p>Brand Designer</p>
-            <p>UrbanFit Studio</p>
-            <p>2023-24</p>
-            <p>Package Designer</p>
-            <p>GreenK Studio</p>
-            <p>2020-22</p>
+            <p>Digital Marketing Specialist</p>
+            <p>CMGT Ltd</p>
+            <p>Jan 2025 - Feb 2026</p>
+            <p>Property Manager</p>
+            <p>Siesta Key Property Management</p>
+            <p>Sep 2024 - Mar 2026</p>
+            <p>Saas Business Development</p>
+            <p>Greenfly</p>
+            <p>Aug 2024 - Mar 2026</p>
           </div>
         </div>
-        <figure class="image-block">
-          <img src="https://framerusercontent.com/images/roWFLkzHAotwSx5UxGPxpxMeA.jpg?width=904&height=1200" alt="Meily profile portrait" />
-        </figure>
       </section>
 
-      <section class="recent-work" aria-label="Recent works">
+      <section class="recent-work music-showcase" aria-label="Recent works">
         <div class="recent-header">
-          <p>Recent Works</p>
-          <div class="carousel-buttons">
-            <button type="button" class="carousel-prev" aria-label="Previous projects">
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M15 18 9 12l6-6" /></svg>
-            </button>
-            <button type="button" class="carousel-next" aria-label="Next projects">
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></svg>
-            </button>
+          <div>
+            <p>Recent Works</p>
+            <span>A scrollable mix of campaigns, web builds, email systems, and brand visuals.</span>
           </div>
         </div>
         <div class="recent-track" tabindex="0">
-          <a class="recent-card" href="#contact">
-            <img src="https://framerusercontent.com/images/bed888CTflXNK3KFX1R7VhRMtE.png?scale-down-to=1024&width=933&height=1200" alt="Cosmetic bottle recent work" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="recent-card" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Flowstack landing page project">
+            <span class="album-art"><img loading="lazy" decoding="async" src="./assets/projects/flowstack-landing-page.jpg" alt="Flowstack SaaS landing page recent work" /></span>
+            <span class="track-meta"><b>Flowstack</b><small>SaaS landing page</small></span>
           </a>
-          <a class="recent-card" href="#contact">
-            <img src="https://framerusercontent.com/images/JGI1jOpxUUfW0IRfPmx7eMGhc.png?scale-down-to=1024&width=686&height=1200" alt="Bottle box recent work" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="recent-card" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Greenfly email project">
+            <span class="album-art"><img loading="lazy" decoding="async" src="./assets/projects/greenfly-email-design.jpg" alt="Greenfly email campaign recent work" /></span>
+            <span class="track-meta"><b>Greenfly</b><small>Email campaign</small></span>
           </a>
-          <a class="recent-card" href="#contact">
-            <img src="https://framerusercontent.com/images/fsFDlU7CKq0E96MXMN9fUXrNw.png?scale-down-to=512&width=1200&height=801" alt="Minimal bottle recent work" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="recent-card" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Maklin email project">
+            <span class="album-art"><img loading="lazy" decoding="async" src="./assets/projects/maklin-email-layout.jpg" alt="Maklin email layout recent work" /></span>
+            <span class="track-meta"><b>Maklin</b><small>Fashion email layout</small></span>
           </a>
-          <a class="recent-card" href="#contact">
-            <img src="https://framerusercontent.com/images/jlIAaI4caPj3oVLaxetMd2RvY.png?scale-down-to=1024&width=800&height=1200" alt="Tube design recent work" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="recent-card" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Lumiere packaging project">
+            <span class="album-art"><img loading="lazy" decoding="async" src="./assets/projects/lumiere-botanique-packaging.jpg" alt="Lumiere packaging recent work" /></span>
+            <span class="track-meta"><b>Lumiere</b><small>Packaging direction</small></span>
           </a>
-          <a class="recent-card" href="#contact">
-            <img src="https://framerusercontent.com/images/RYRvZnstUexQMOl8zRyrvDfDT0.png?scale-down-to=1024&width=800&height=1200" alt="Bottle brand recent work" />
-            <span>View Casestudy <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+          <a class="recent-card" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open Osbauer campaign project">
+            <span class="album-art"><img loading="lazy" decoding="async" src="./assets/projects/osbauer-workwear-campaign.jpg" alt="Osbauer workwear campaign recent work" /></span>
+            <span class="track-meta"><b>Osbauer</b><small>Workwear campaign</small></span>
+          </a>
+          <a class="recent-card" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open AI marketing advantage project">
+            <span class="album-art"><img loading="lazy" decoding="async" src="./assets/projects/ai-marketing-advantage.jpg" alt="AI marketing advantage visual framework recent work" /></span>
+            <span class="track-meta"><b>AI Advantage</b><small>Strategy framework</small></span>
+          </a>
+          <a class="recent-card" href="https://drive.google.com/drive/folders/1FuQyUmUecVO-7lc4yKb2sqb1SpuK95n9?usp=sharing" target="_blank" rel="noreferrer" aria-label="Open email sequence project">
+            <span class="album-art"><img loading="lazy" decoding="async" src="./assets/projects/flowstack-email-sequence.jpg" alt="Flowstack welcome email sequence recent work" /></span>
+            <span class="track-meta"><b>Email Flow</b><small>Welcome sequence</small></span>
           </a>
         </div>
       </section>
 
       <section class="process split-section" data-display="PROCESS">
         <figure class="image-block tall">
-          <img src="https://framerusercontent.com/images/djbcRHCD89IflJ1okJAa1J65cuM.png?width=1200&height=600" alt="Design process desk" />
+          <img loading="lazy" decoding="async" src="./assets/working-process-neon-ribbon.jpg" alt="Orange neon particle ribbon representing AI-powered execution" />
         </figure>
         <div class="copy-block">
-          <p class="eyebrow"><span></span>Design process</p>
+          <p class="eyebrow"><span></span>Working Process</p>
           <h2>Process</h2>
-          <p>crafting bold visuals that inspire and elevate brands with thought process.</p>
+          <p>Driving growth through smart strategy, clean design, and AI-powered execution - built around a process that delivers results on time.</p>
           <div class="button-row">
-            <a class="glass-button compact" href="#contact">Book a Free Call</a>
+            <a class="glass-button compact" href="https://calendar.notion.so/meet/humpriazi/eo6j4vsf" target="_blank" rel="noreferrer">Book a Free Call</a>
             <a class="glass-button compact" href="#projects">See Projects</a>
           </div>
           <div class="step-list">
             <article class="step-card">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M8.5 14.5A6 6 0 1 1 15.5 14c-.9.6-1.5 1.6-1.5 2.7H10c0-1-.5-1.7-1.5-2.2Z" /></svg>
-              <h3>Define Your Vision</h3>
+              <h3>Understand Your Goals</h3>
               <p>
-                Find the perfect plan tailored to your needs, offering the right balance of
-                features, flexibility, and value to help you achieve your goals effortlessly.
+                I start by digging into your brand, audience, and goals - whether that's a
+                website, a campaign, or a full digital strategy - so every decision is backed by
+                purpose, not guesswork.
               </p>
               <b>1</b>
             </article>
             <article class="step-card">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" /></svg>
-              <h3>Submit Your Request</h3>
+              <h3>Strategy & Execution</h3>
               <p>
-                Easily submit your design requirements through our private design portal,
-                ensuring a seamless process where your vision is understood, refined, and
-                brought to life.
+                From there, I build out the plan - designing your site or visuals, setting up
+                email and marketing systems, and using AI-powered tools to automate and optimize
+                every step.
               </p>
               <b>2</b>
             </article>
             <article class="step-card">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 7 9 18l-5-5" /></svg>
-              <h3>Project Delivered</h3>
+              <h3>Results Delivered</h3>
               <p>
-                I ensure your project is completed with precision and delivered within 2-3
-                days. With a keen eye for detail, I bring your vision to life on time.
+                I track performance, refine based on real data, and deliver measurable growth -
+                on time and with the same precision that's helped brands boost sales, engagement,
+                and customer satisfaction.
               </p>
               <b>3</b>
             </article>
@@ -236,88 +273,74 @@
       <section class="services" id="services" data-display="SERVICES">
         <div class="split-section services-intro">
           <div class="copy-block">
-            <p class="eyebrow"><span></span>Design services</p>
-            <h2>Services</h2>
+            <h2>Digital Services</h2>
             <p>
-              Helping businesses standout with brand identity packaging that captivates and
-              converts effectively.
+              Helping businesses grow with digital marketing, design, and AI-powered strategy
+              that converts.
             </p>
-            <div class="tag-cloud">
-              <span>Product Design</span>
-              <span>Brand Identity Design</span>
-              <span>Branding</span>
-              <span>Packaging Design</span>
-              <span>Mochup Design</span>
-            </div>
-            <div class="button-row">
-              <a class="glass-button compact" href="#contact">Book a Free Call</a>
-              <a class="glass-button compact" href="#projects">See Projects</a>
-            </div>
           </div>
-          <figure class="image-block">
-            <img src="https://framerusercontent.com/images/p6Im6dfknHAI0ig4NqDcO4WNpc.jpg?width=898&height=1200" alt="Black product bottle design" />
-          </figure>
         </div>
         <div class="service-grid">
           <article class="service-card">
-            <h3><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h9v13H4zM13 4h7v16h-7z" /></svg>Brand Identity</h3>
-            <p>Crafting unique, memorable brand identities that resonate with your audience, from logos to visual systems, ensuring every touchpoint reflects your brand's essence.</p>
+            <h3><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 13h3l8-5v12l-8-5H4zM18 10a4 4 0 0 1 0 8M20 7a8 8 0 0 1 0 14" /></svg>Digital Marketing</h3>
+            <p>Driving growth through optimized campaigns, social media management, and e-commerce strategy - the kind that's helped brands increase sales by 35-50% year-over-year.</p>
           </article>
           <article class="service-card">
-            <h3><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M6 6l12 12M18 6 6 18" /></svg>Brand Design</h3>
-            <p>Designing sleek, impactful packaging that not only looks stunning but also connects with your ideal customers, turning first impressions into loyalty.</p>
+            <h3><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v11H4zM8 20h8M12 16v4" /></svg>UI/UX & Website Design</h3>
+            <p>Designing and building clean, conversion-focused websites and user experiences that make your brand easy to navigate and easy to trust.</p>
           </article>
           <article class="service-card">
-            <h3><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 8 12 4l8 4-8 4-8-4Zm0 4 8 4 8-4M4 16l8 4 8-4" /></svg>Package Design</h3>
-            <p>Bringing your brand to life through high-fidelity product mockups, giving you a clear, realistic preview of how your packaging will stand out.</p>
+            <h3><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6" /></svg>Email Marketing</h3>
+            <p>Crafting email campaigns with refined audience targeting and messaging - built to boost open rates and turn subscribers into customers.</p>
           </article>
           <article class="service-card">
-            <h3><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 5h14v14H5zM9 9h6v6H9z" /></svg>Mochup Design</h3>
-            <p>Tailored design mockups that align perfectly with your brand's aesthetic, because every detail matters when showcasing your product's true potential.</p>
+            <h3><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1" /></svg>SaaS Business Development</h3>
+            <p>Building targeted prospect lists, executing LinkedIn outreach, managing sales pipelines, and booking qualified meetings to accelerate SaaS growth and customer acquisition.</p>
           </article>
         </div>
-        <div class="skill-marquee">
-          <div class="skill-track">
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v11H4zM8 20h8M12 16v4" /></svg>Slide Decks</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h6M8 16h7" /></svg>Copywriting</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M6 6l12 12M18 6 6 18" /></svg>Brand Graphics</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 4h8l4 8-8 8-8-8z" /></svg>Brand Migration</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m4 7 8-4 8 4-8 4-8-4Zm0 5 8 4 8-4M4 17l8 4 8-4" /></svg>Package Design</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v18M5 8h14M5 16h14" /></svg>Branding</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v11H4zM8 20h8M12 16v4" /></svg>Slide Decks</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h6M8 16h7" /></svg>Copywriting</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M6 6l12 12M18 6 6 18" /></svg>Brand Graphics</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 4h8l4 8-8 8-8-8z" /></svg>Brand Migration</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m4 7 8-4 8 4-8 4-8-4Zm0 5 8 4 8-4M4 17l8 4 8-4" /></svg>Package Design</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v18M5 8h14M5 16h14" /></svg>Branding</span>
-          </div>
-          <div class="skill-track reverse">
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 14h6v6H4zM14 4h6v16h-6zM4 4h6v6H4z" /></svg>Optimization</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h8M8 13h5" /></svg>Brand Landing Pages</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 8h12M6 12h12M6 16h8M4 4h16v16H4z" /></svg>Social Media</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 5h4v4H5zM15 5h4v4h-4zM5 15h4v4H5zM15 15h4v4h-4z" /></svg>Icons</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12s3-6 8-6 8 6 8 6-3 6-8 6-8-6-8-6Z" /><path d="M12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" /></svg>Brand Visibility</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 12h8M12 8v8M5 5h4v4H5zM15 5h4v4h-4zM5 15h4v4H5zM15 15h4v4h-4z" /></svg>Brand Integrations</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 14h6v6H4zM14 4h6v16h-6zM4 4h6v6H4z" /></svg>Optimization</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h8M8 13h5" /></svg>Brand Landing Pages</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 8h12M6 12h12M6 16h8M4 4h16v16H4z" /></svg>Social Media</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 5h4v4H5zM15 5h4v4h-4zM5 15h4v4H5zM15 15h4v4h-4z" /></svg>Icons</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12s3-6 8-6 8 6 8 6-3 6-8 6-8-6-8-6Z" /><path d="M12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" /></svg>Brand Visibility</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 12h8M12 8v8M5 5h4v4H5zM15 5h4v4h-4zM5 15h4v4H5zM15 15h4v4h-4z" /></svg>Brand Integrations</span>
-          </div>
+        <div class="tools-panel" aria-label="Tools and software used">
+          <ul class="tools-grid" aria-label="Software and platforms">
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=framer.com&sz=64" alt="" loading="lazy" /><b>F</b></span><span class="tool-label">Framer</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=canva.com&sz=64" alt="" loading="lazy" /><b>C</b></span><span class="tool-label">Canva</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=claude.ai&sz=64" alt="" loading="lazy" /><b>Cl</b></span><span class="tool-label">Claude</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=64" alt="" loading="lazy" /><b>G</b></span><span class="tool-label">ChatGPT</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=microsoft365.com&sz=64" alt="" loading="lazy" /><b>O</b></span><span class="tool-label">Microsoft Office</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://cdn.simpleicons.org/html5/E34F26" alt="" loading="lazy" /><b>H</b></span><span class="tool-label">HTML5</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=apollo.io&sz=64" alt="" loading="lazy" /><b>A</b></span><span class="tool-label">Apollo.io</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=hubspot.com&sz=64" alt="" loading="lazy" /><b>H</b></span><span class="tool-label">HubSpot</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=business.linkedin.com&sz=64" alt="" loading="lazy" /><b>Li</b></span><span class="tool-label">LinkedIn Sales Navigator</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=business.facebook.com&sz=64" alt="" loading="lazy" /><b>M</b></span><span class="tool-label">Meta Business Suite</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=klaviyo.com&sz=64" alt="" loading="lazy" /><b>K</b></span><span class="tool-label">Klaviyo</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=mailchimp.com&sz=64" alt="" loading="lazy" /><b>M</b></span><span class="tool-label">Mailchimp</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=sellercentral.amazon.com&sz=64" alt="" loading="lazy" /><b>A</b></span><span class="tool-label">Amazon Seller Central</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=clickup.com&sz=64" alt="" loading="lazy" /><b>C</b></span><span class="tool-label">ClickUp</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=notion.so&sz=64" alt="" loading="lazy" /><b>N</b></span><span class="tool-label">Notion</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=zendesk.com&sz=64" alt="" loading="lazy" /><b>Z</b></span><span class="tool-label">Zendesk</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=lookerstudio.google.com&sz=64" alt="" loading="lazy" /><b>G</b></span><span class="tool-label">Google Studio</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=capcut.com&sz=64" alt="" loading="lazy" /><b>C</b></span><span class="tool-label">CapCut</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://cdn.simpleicons.org/adobephotoshop/31A8FF" alt="" loading="lazy" /><b>Ps</b></span><span class="tool-label">Adobe Photoshop</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://cdn.simpleicons.org/adobeaftereffects/9999FF" alt="" loading="lazy" /><b>Ae</b></span><span class="tool-label">Adobe After Effects</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=guesty.com&sz=64" alt="" loading="lazy" /><b>G</b></span><span class="tool-label">Guesty</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=64" alt="" loading="lazy" /><b>E</b></span><span class="tool-label">ElevenLabs</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=brevo.com&sz=64" alt="" loading="lazy" /><b>B</b></span><span class="tool-label">Brevo</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=workspace.google.com&sz=64" alt="" loading="lazy" /><b>G</b></span><span class="tool-label">Google Workspace</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=figma.com&sz=64" alt="" loading="lazy" /><b>F</b></span><span class="tool-label">Figma</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=blackmagicdesign.com&sz=64" alt="" loading="lazy" /><b>D</b></span><span class="tool-label">Da Vinci Resolve</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=higgsfield.ai&sz=64" alt="" loading="lazy" /><b>H</b></span><span class="tool-label">Higgsfield</span></li>
+            <li class="tool-pill"><span class="tool-icon" aria-hidden="true"><img decoding="async" src="https://www.google.com/s2/favicons?domain=openai.com&sz=64" alt="" loading="lazy" /><b>Co</b></span><span class="tool-label">Codex</span></li>
+          </ul>
         </div>
       </section>
 
       <section class="testimonials split-section" id="testimonials">
         <figure class="image-block">
-          <img src="https://framerusercontent.com/images/PjaPY2S6qP6ii6fCxTJHhHU66SM.png?width=1200&height=904" alt="Client workshop" />
+          <img loading="lazy" decoding="async" src="./assets/client-results-desk.jpeg" alt="Person reviewing digital marketing analytics at a desk" />
         </figure>
         <div class="copy-block">
-          <p class="eyebrow"><span></span>Reviews</p>
-          <h2>Client Reviews</h2>
-          <p>Real feedback from clients who trusted my design expertise to elevate their brands successfully.</p>
+          <h2>Client Results</h2>
+          <p>Real outcomes from the brands and businesses I've helped grow through digital marketing, design, and email strategy.</p>
           <div class="button-row">
-            <a class="glass-button compact" href="#contact">Book a Free Call</a>
+            <a class="glass-button compact" href="https://calendar.notion.so/meet/humpriazi/eo6j4vsf" target="_blank" rel="noreferrer">Book a Free Call</a>
             <a class="glass-button compact" href="#services">See Services</a>
           </div>
         </div>
@@ -326,87 +349,98 @@
       <section class="review-strip" aria-label="Client reviews">
         <div class="review-track">
           <article class="review-card">
-            <img src="https://framerusercontent.com/images/GTWhJyJde9nAeuMXqgYJh6jQhrU.jpg?scale-down-to=1024&width=800&height=1200" alt="" />
-            <h3>Richards Johnson</h3>
-            <p>Creative Director & Lead Designer</p>
-            <p>"Working with Meily was a seamless experience. Her ability to merge creativity with functionality resulted in designs that not only looked stunning but also drove meaningful engagement."</p>
+            <span class="review-avatar" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 34c8 0 14-6 14-14S40 6 32 6 18 12 18 20s6 14 14 14Z"/><path d="M10 58c3-12 11-18 22-18s19 6 22 18H10Z"/></svg></span>
+            <h3>J. Jones</h3>
+            <p>E-commerce Brand Owner (Amazon/Shopify)</p>
+            <p>"Honestly I was drowning in customer reviews before Humpri came on. Like, hundreds of unanswered ones. Within a few months we were at 95% response rate and our rating went from a 4.1 to a 4.6. I didn't think that was even possible without hiring a whole team."</p>
           </article>
           <article class="review-card">
-            <img src="https://framerusercontent.com/images/c5E9pkEhKO6BmnqFuXLWa9Xqw34.png?scale-down-to=1024&width=904&height=1200" alt="" />
-            <h3>June Lee</h3>
-            <p>CEO of GreenRoots</p>
-            <p>"Meily's strategic approach to design brought our brand vision to life. The packaging and brand elements aligned perfectly with our sustainability values."</p>
+            <span class="review-avatar" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 34c8 0 14-6 14-14S40 6 32 6 18 12 18 20s6 14 14 14Z"/><path d="M10 58c3-12 11-18 22-18s19 6 22 18H10Z"/></svg></span>
+            <h3>C. Scott</h3>
+            <p>Multi-brand E-commerce Seller</p>
+            <p>"I've worked with a lot of marketing people who talk a big game and deliver flat numbers. Humpri's the opposite - quiet, just gets it done. 35 to 50% sales growth year over year, no drama, no excuses."</p>
           </article>
           <article class="review-card">
-            <img src="https://framerusercontent.com/images/hSbSnYWGLq3elsCJfJAmFGgQZOc.png?scale-down-to=512&width=1200&height=904" alt="" />
-            <h3>Jona Carter</h3>
-            <p>Founder of EcoLux</p>
-            <p>"Every project Meily touches turns into a perfect blend of design and purpose. She crafted packaging that reflected our eco-friendly mission."</p>
+            <span class="review-avatar" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 34c8 0 14-6 14-14S40 6 32 6 18 12 18 20s6 14 14 14Z"/><path d="M10 58c3-12 11-18 22-18s19 6 22 18H10Z"/></svg></span>
+            <h3>P. McInery</h3>
+            <p>Vacation Rental Owner, Sarasota FL</p>
+            <p>"Fifteen properties, peak season, and I never once felt like things were falling apart. 85-90% occupancy basically all year. That's the kind of person you want answering guest messages at 11pm."</p>
           </article>
           <article class="review-card">
-            <img src="https://framerusercontent.com/images/VG4Ga2U7ZktrC75M3Vg8eUynj4M.png?scale-down-to=512&width=600&height=600" alt="" />
-            <h3>Sofia Toms</h3>
-            <p>Founder at GreenK Studios</p>
-            <p>"Meily's designs speak for themselves, bold, strategic, and impactful. She took the time to understand our brand and deliver concepts that resonated."</p>
+            <span class="review-avatar" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 34c8 0 14-6 14-14S40 6 32 6 18 12 18 20s6 14 14 14Z"/><path d="M10 58c3-12 11-18 22-18s19 6 22 18H10Z"/></svg></span>
+            <h3>A. Kapoor</h3>
+            <p>DTC Brand Marketing Lead</p>
+            <p>"We'd been stuck around the same open rates for ages and just assumed that was our ceiling. Humpri looked at it for two weeks and pushed us up 25%. Sometimes you just need someone who actually reads the data instead of guessing."</p>
+          </article>
+          <article class="review-card">
+            <span class="review-avatar" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 34c8 0 14-6 14-14S40 6 32 6 18 12 18 20s6 14 14 14Z"/><path d="M10 58c3-12 11-18 22-18s19 6 22 18H10Z"/></svg></span>
+            <h3>R. Bennett</h3>
+            <p>Founder & Executive</p>
+            <p>"I'll be honest, I'm picky about who touches my calendar and my inbox. Humpri earned that trust fast. My LinkedIn outreach actually turned into real conversations instead of just connection requests sitting there."</p>
+          </article>
+          <article class="review-card">
+            <span class="review-avatar" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 34c8 0 14-6 14-14S40 6 32 6 18 12 18 20s6 14 14 14Z"/><path d="M10 58c3-12 11-18 22-18s19 6 22 18H10Z"/></svg></span>
+            <h3>L. Marchetti</h3>
+            <p>Email Marketing Lead</p>
+            <p>"Our old emails looked like every other boring newsletter in someone's inbox. Humpri redesigned the whole template - clean, on-brand, actually scannable on mobile - and we noticed people actually started clicking instead of scrolling past."</p>
           </article>
         </div>
       </section>
 
       <section class="stats" data-display="IMPACT">
-        <div><h3>180+</h3><p>design projects completed.</p></div>
-        <div><h3>96%</h3><p>Client satisfaction rate.</p></div>
-        <div><h3>15+</h3><p>Years of experience</p></div>
+        <div><h3>$250K+</h3><p>in annual e-commerce sales managed</p></div>
+        <div><h3>90%+</h3><p>average client/customer satisfaction rate</p></div>
+        <div><h3>3+</h3><p>years of experience across marketing, design & support</p></div>
       </section>
 
       <section class="faq split-section" aria-label="Frequently asked questions">
         <div class="copy-block">
           <p class="eyebrow"><span></span>FAQ'S</p>
           <h2>Answers</h2>
-          <p>Find answers to common questions about my design process, services etc...</p>
+          <p>Find answers to common questions about my services, process, and how I work.</p>
           <figure class="image-block faq-image">
-            <img src="https://framerusercontent.com/images/QqqmFNIdzb0HbOiMSHvqZXkwT7w.png?width=1200&height=1200" alt="Lemon still life" />
+            <img loading="lazy" decoding="async" src="./assets/faq-digital-silhouette.png" alt="Digital support silhouette holding a glowing tablet" />
           </figure>
-          <div class="tag-cloud">
-            <span>Product Design</span>
-            <span>Brand Identity Design</span>
-            <span>Branding</span>
-          </div>
-          <a class="glass-button compact" href="#contact">Book a Free Call</a>
         </div>
         <div class="accordion">
-          <button type="button" class="faq-item active"><span>What services do you provide?</span><b></b><p>I specialize in brand identity and package design, with experience in web design, UI/UX, and to create brand experiences.</p></button>
-          <button type="button" class="faq-item"><span>How do I start working with you?</span><b></b><p>Book a free call, share your goals, and I will map a design plan around your launch timeline.</p></button>
-          <button type="button" class="faq-item"><span>What design tools do you use?</span><b></b><p>I work with Figma, Photoshop, Illustrator, and high-fidelity mockup systems.</p></button>
-          <button type="button" class="faq-item"><span>How long does a project take?</span><b></b><p>Most focused identity or packaging projects are delivered within 2-3 days after direction is approved.</p></button>
-          <button type="button" class="faq-item"><span>Do you provide revisions?</span><b></b><p>Yes. Each project includes structured review rounds to refine the concept and final files.</p></button>
-          <button type="button" class="faq-item"><span>What industries do you work with?</span><b></b><p>I often work with beauty, wellness, lifestyle, food, and sustainable consumer brands.</p></button>
-          <button type="button" class="faq-item"><span>Do you offer development services?</span><b></b><p>Yes, selected web and landing page development can be included for brand launches.</p></button>
-          <button type="button" class="faq-item"><span>What is your pricing structure?</span><b></b><p>Pricing depends on scope, deliverables, and timeline. A free call is the quickest way to size the project.</p></button>
-          <button type="button" class="faq-item"><span>Can you redesign my existing website?</span><b></b><p>Yes. I can refresh the visual system, improve structure, and align the site with the updated brand.</p></button>
+          <button type="button" class="faq-item active"><span>What services do you provide?</span><b></b><p>I specialize in digital marketing and email campaigns, with experience in UI/UX design, website building, and AI-powered automation to help brands grow.</p></button>
+          <button type="button" class="faq-item"><span>How do I start working with you?</span><b></b><p>Book a free call, or send me a message with a bit about your business and goals - I'll follow up with next steps and a plan tailored to you.</p></button>
+          <button type="button" class="faq-item"><span>What tools do you use?</span><b></b><p>Figma, Canva, Klaviyo, Mailchimp, HubSpot, ClickUp, and AI tools like ChatGPT and Claude to streamline strategy and execution.</p></button>
+          <button type="button" class="faq-item"><span>How long does a project take?</span><b></b><p>Timelines depend on scope - a website build or campaign setup typically takes 2 to 6 weeks. I'll give you a clear timeline before we start.</p></button>
+          <button type="button" class="faq-item"><span>Do you provide revisions?</span><b></b><p>Yes, revisions are included to make sure the final result matches your vision.</p></button>
+          <button type="button" class="faq-item"><span>What industries do you work with?</span><b></b><p>I've worked across e-commerce, property management, and executive support - and I'm comfortable adapting strategy to most industries.</p></button>
+          <button type="button" class="faq-item"><span>Do you offer ongoing marketing support?</span><b></b><p>Yes, I offer both one-time projects and ongoing marketing/email management support.</p></button>
+          <button type="button" class="faq-item"><span>What is your pricing structure?</span><b></b><p>Pricing depends on project scope - reach out for a custom quote based on your needs.</p></button>
+          <button type="button" class="faq-item"><span>Can you redesign my existing website?</span><b></b><p>Yes, I can audit and redesign existing sites to improve both design and performance.</p></button>
         </div>
       </section>
 
       <section class="final-cta" id="contact" data-display="CREATE">
         <div class="hero-bg"></div>
         <p class="eyebrow muted"><span></span>Available For Work</p>
-        <h3>Curious about what we can create together? Let's bring something extraordinary to life!</h3>
-        <a class="glass-button compact" href="mailto:hello@framebase.design">Book a Free Call</a>
+        <h3>Curious about what we can build together? Let's turn your next idea into something that actually converts.</h3>
+        <a class="glass-button compact" href="https://calendar.notion.so/meet/humpriazi/eo6j4vsf" target="_blank" rel="noreferrer">Book a Free Call</a>
         <div class="socials" aria-label="Social links">
-          <a href="#" aria-label="Behance">Be</a>
+          <a href="https://www.linkedin.com/in/humpri-cabardo-443577250/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.94 8.98H3.8V20h3.14V8.98ZM5.37 7.47a1.82 1.82 0 1 0 0-3.64 1.82 1.82 0 0 0 0 3.64ZM20.2 20h-3.13v-5.36c0-1.28-.03-2.93-1.79-2.93-1.79 0-2.06 1.4-2.06 2.84V20h-3.13V8.98h3v1.5h.04c.42-.8 1.44-1.65 2.96-1.65 3.17 0 3.76 2.09 3.76 4.8V20h.35Z"/></svg>
+          </a>
           <i></i>
-          <a href="#" aria-label="X">X</a>
+          <a href="https://github.com/humpriazi" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2.5a9.5 9.5 0 0 0-3 18.52c.48.09.66-.21.66-.47v-1.68c-2.7.59-3.27-1.15-3.27-1.15-.44-1.12-1.08-1.42-1.08-1.42-.88-.6.07-.59.07-.59.98.07 1.5 1.01 1.5 1.01.87 1.49 2.28 1.06 2.84.81.09-.63.34-1.06.62-1.31-2.16-.24-4.43-1.08-4.43-4.8 0-1.06.38-1.93 1-2.61-.1-.25-.43-1.24.1-2.58 0 0 .81-.26 2.66 1 .77-.21 1.59-.32 2.41-.32.82 0 1.64.11 2.41.32 1.85-1.26 2.66-1 2.66-1 .53 1.34.2 2.33.1 2.58.62.68 1 1.55 1 2.61 0 3.73-2.28 4.56-4.45 4.8.35.3.66.89.66 1.8v2.53c0 .26.18.56.67.47A9.5 9.5 0 0 0 12 2.5Z"/></svg>
+          </a>
           <i></i>
-          <a href="#" aria-label="Dribbble">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM4 13c5.5.1 9.6-1.8 12.4-5.4M8.4 4.4c3.1 3.2 5.1 8.6 5.9 16M20.8 13.2c-3.6-.9-7-.2-10.2 2.3" /></svg>
+          <a href="https://facebook.com/humpri.azi" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14.2 8.3V6.7c0-.78.52-.96.89-.96h2.26V2.52L14.24 2.5c-3.45 0-4.23 2.58-4.23 4.23V8.3H7.3v3.6h2.71V21.5h4.19v-9.6h2.84l.42-3.6H14.2Z"/></svg>
           </a>
         </div>
         <footer class="footer-line">
-          <p>hello@framebase.design</p>
+          <p>Got a brand that needs better marketing, design, or both? Let's make it happen.</p>
           <p>All rights reserved, (c)2025</p>
         </footer>
       </section>
     </main>
 
-    <script src="./script.js?v=5"></script>
+    <script src="./script.js?v=43"></script>
   </body>
 </html>
+
