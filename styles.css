@@ -5002,3 +5002,55 @@ body.is-scrolling .site-header {
     display: none;
   }
 }
+
+/* Final visual blend pass: no blue recent-work wash, no process image tile */
+.process .image-block,
+.process .image-block.tall,
+.process figure.image-block {
+  display: none !important;
+}
+
+.music-showcase {
+  background:
+    radial-gradient(circle at 42% 18%, rgba(255, 109, 24, 0.11), transparent 35%),
+    radial-gradient(circle at 82% 70%, rgba(255, 78, 16, 0.08), transparent 34%),
+    linear-gradient(180deg, rgba(3, 3, 3, 0.98), rgba(7, 5, 4, 0.96) 48%, rgba(3, 3, 3, 0.98));
+  box-shadow: inset 0 1px 0 rgba(255, 120, 45, 0.08), inset 0 -1px 0 rgba(255, 120, 45, 0.08);
+}
+
+.music-showcase::before {
+  background:
+    linear-gradient(90deg, rgba(255, 108, 28, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 108, 28, 0.03) 1px, transparent 1px);
+  background-size: 12.5% 100%, 100% 50%;
+  opacity: 0.16;
+}
+
+.music-showcase::after {
+  background: radial-gradient(ellipse at center, rgba(255, 96, 24, 0.08), transparent 70%);
+  opacity: 0.45;
+}
+
+.music-showcase .recent-card {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.028)),
+    rgba(15, 13, 12, 0.72);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.process.split-section {
+  display: block;
+  max-width: min(920px, calc(100% - 48px));
+  margin-bottom: clamp(88px, 8vw, 132px);
+}
+
+.process .copy-block {
+  position: relative;
+  top: auto;
+}
+
+@media (max-width: 760px) {
+  .process.split-section {
+    max-width: calc(100% - 36px);
+  }
+}
